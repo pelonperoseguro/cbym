@@ -1,0 +1,67 @@
+---
+layout: layouts/layout-page.njk
+---
+
+{% from "components/cardhorizontal.njk" import cardhorizontal %} {% from
+"components/card.njk" import card %} {% from "components/carouselcard.njk"
+import corouselcard %} {% from "components/cardimage.njk" import cardimage %} {%
+from "ui/title.njk" import title %} {% for item in range(0,1) %}
+<section class="">
+  {{ cardhorizontal("Disfruta la experiencia", "No hay restaurante más íntimo
+  que tu propia casa, donde puedes disfrutar cómodamente de una experiencia
+  única con familia y amigos. Encuentra tu chef, personaliza cada detalle del
+  menú, y descubre nuevas maneras de celebrar con los tuyos trayendo la magia de
+  un restaurante de alta cocina a tu mesa. <br />
+  Convierte tu casa en un restaurante y disfruta de una experiencia gastronómica
+  única.", "Vamos") }}
+</section>
+{% endfor %}
+
+<section class="">
+  {{ title("Como funciona") }}
+  <article class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+    {% for item in range(0,6) %}
+    {{ card() }}
+    {% endfor %}
+  </article>
+</section>
+
+<section class="lg:h-[60dvh]">
+  {{ corouselcard() }}
+</section>
+
+<section class="overflow-hidden">
+  {{ title( "35000 menús personalizados por nuestros <br />
+  Chefs a domicilio en México", "Cada ocasión requiere un menú diferente,
+  ¡personaliza el tuyo!" ) }}
+  <article
+    class="overflow-x-scroll grid grid-cols-[repeat(3,250px)] md:grid-cols-3 gap-5"
+  >
+    {{ cardimage() }}
+    {{ cardimage() }}
+    {{ cardimage() }}
+  </article>
+</section>
+
+<section class="lg:h-dvh content-center">
+  {{
+    title(
+      "Ellos confían en Take a Chef",
+      "Con la combinación de tecnología, pasión por la gastronomía y amor por un servicio de calidad, hemos creado la única solución global en el mercado para ofrecer servicios de chef privado de forma fácil e intuitiva, en cualquier destino y en cualquier momento."
+    )
+  }}
+  <article class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+    {% for item in infoSponsors %}
+    <picture>
+      <img
+        alt="{{ item.alt }}"
+        title="{{ item.title }}"
+        width="{{ item.width }}"
+        height="{{ item.height }}"
+        loading="{{ item.loading }}"
+        src="{{ item.src }}"
+      />
+    </picture>
+    {% endfor %}
+  </article>
+</section>

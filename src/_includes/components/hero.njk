@@ -1,0 +1,13 @@
+{% macro hero(subTitle, title = "Hello there", textBtn = "Get Started", url =
+"https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp") %}
+<section class="hero min-h-screen" style="background-image: url({{url}});">
+  <article class="hero-overlay bg-opacity-60"></article>
+  <article class="hero-content text-neutral-content text-center">
+    <div class="max-w-xl">
+      <h1 class="mb-5 text-5xl font-bold">{{ title }}</h1>
+      <p class="mb-5">{{ subTitle }}</p>
+      <button class="btn btn-primary">{{ textBtn }}</button>
+    </div>
+  </article>
+</section>
+{% endmacro %}

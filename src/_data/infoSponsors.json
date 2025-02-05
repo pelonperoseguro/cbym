@@ -1,0 +1,82 @@
+[
+  {
+    "alt": "Airbnb",
+    "title": "Airbnb",
+    "width": "360",
+    "height": "180",
+    "loading": "lazy",
+    "src": "https://d1zzxdyvtq79bu.cloudfront.net/context/frontend/common/partners/airbnb.png"
+  },
+  {
+    "alt": "American Express",
+    "title": "American Express",
+    "width": "360",
+    "height": "180",
+    "loading": "lazy",
+    "src": "https://d1zzxdyvtq79bu.cloudfront.net/context/frontend/common/partners/american-express.png"
+  },
+  {
+    "alt": "Four Seasons - Hotels and resorts",
+    "title": "Four Seasons - Hotels and resorts",
+    "width": "360",
+    "height": "180",
+    "loading": "lazy",
+    "src": "https://d1zzxdyvtq79bu.cloudfront.net/context/frontend/common/partners/four-seasons.png"
+  },
+  {
+    "alt": "Inspirato",
+    "title": "Inspirato",
+    "width": "360",
+    "height": "180",
+    "loading": "lazy",
+    "src": "https://d1zzxdyvtq79bu.cloudfront.net/context/frontend/common/partners/inspirato.png"
+  },
+  {
+    "alt": "John Paul",
+    "title": "John Paul",
+    "width": "360",
+    "height": "180",
+    "loading": "lazy",
+    "src": "https://d1zzxdyvtq79bu.cloudfront.net/context/frontend/common/partners/john-paul.png"
+  },
+  {
+    "alt": "Velocity Black",
+    "title": "Velocity Black",
+    "width": "360",
+    "height": "180",
+    "loading": "lazy",
+    "src": "https://d1zzxdyvtq79bu.cloudfront.net/context/frontend/common/partners/velocity.png"
+  },
+  {
+    "alt": "Oliver's Travels",
+    "title": "Oliver's Travels",
+    "width": "360",
+    "height": "180",
+    "loading": "lazy",
+    "src": "https://d1zzxdyvtq79bu.cloudfront.net/context/frontend/common/partners/olivers-travels.png"
+  },
+  {
+    "alt": "Airbnb Luxe",
+    "title": "Airbnb Luxe",
+    "width": "360",
+    "height": "180",
+    "loading": "lazy",
+    "src": "https://d1zzxdyvtq79bu.cloudfront.net/context/frontend/common/partners/airbnb-luxe.png"
+  },
+  {
+    "alt": "Onefinestay",
+    "title": "Onefinestay",
+    "width": "360",
+    "height": "180",
+    "loading": "lazy",
+    "src": "https://d1zzxdyvtq79bu.cloudfront.net/context/frontend/common/partners/onefinestay.png"
+  },
+  {
+    "alt": "Wyndham",
+    "title": "Wyndham",
+    "width": "360",
+    "height": "180",
+    "loading": "lazy",
+    "src": "https://d1zzxdyvtq79bu.cloudfront.net/context/frontend/common/partners/wyndham.png"
+  }
+]

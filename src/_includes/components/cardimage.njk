@@ -1,0 +1,17 @@
+{% macro cardimage(title = "Shoes!", subtitle = "If a dog chews shoes whose
+shoes does he choose?", textbtn = "Listen", image =
+"https://d1zzxdyvtq79bu.cloudfront.net/context/frontend/images/menus/tapas/tapas5.jpg")
+%}
+<div class="card bg-base-100 image-full w-full shadow-xl">
+  <figure>
+    <img src="{{ image }}" alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">{{ title }}</h2>
+    <p>{{ subtitle }}</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">{{ textbtn }}</button>
+    </div>
+  </div>
+</div>
+{% endmacro %}

@@ -1,0 +1,11 @@
+{% macro title(title = "Titulo de contenido", subtitle = "", size = "smoll") %}
+<section class="mb-10">
+  {% if size == "smoll" %}
+  <h2 class="text-4xl text-center">{{ title | safe }}</h2>
+  {% elif size == "large" %}
+  <h2 class="text-5xl text-center">{{ title | safe }}</h2>
+  {% endif %} {% if subtitle != "" %}
+  <h3 class="text-lg text-center">{{ subtitle }}</h3>
+  {% endif %}
+</section>
+{% endmacro %}

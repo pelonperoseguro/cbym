@@ -1,0 +1,12 @@
+{% macro card(title = "New album is released!", subtitle = "Click the button to
+listen on Spotiwhy app.", textbtn = "Listen", color = "bg-base-100") %}
+<div class="card {{ color }} shadow-xl">
+  <div class="card-body">
+    <h2 class="card-title {% if color != "bg-base-100" %} text-white {% endif %}">{{ title }}</h2>
+    <p class="{% if color != "bg-base-100" %} text-white {% endif %}">{{ subtitle }}</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">{{ textbtn }}</button>
+    </div>
+  </div>
+</div>
+{% endmacro %}

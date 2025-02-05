@@ -1,0 +1,48 @@
+{% macro cardinfo(direction = "ltr", image1 = {img: "https://d1hdnpfpyy58x9.cloudfront.net/context/frontend/chefs/our_chefs/intro/ourchefs01_01.jpg,w_203,h_287,c_1,q_80,fd_1,e_.webp", alt: ""}, image2 = {img: "https://d1hdnpfpyy58x9.cloudfront.net/context/frontend/chefs/our_chefs/intro/ourchefs01_02.jpg,w_203,h_200,c_1,q_80,fd_1,e_.webp", alt: ""}, image3 = {img: "https://d1hdnpfpyy58x9.cloudfront.net/context/frontend/chefs/our_chefs/intro/ourchefs01_03.jpg,w_203,h_181,c_1,q_80,fd_1,e_.webp", alt: ""}, image4 = {img: "https://d1hdnpfpyy58x9.cloudfront.net/context/frontend/chefs/our_chefs/intro/ourchefs01_04.jpg,w_203,h_287,c_1,q_80,fd_1,e_.webp", alt: ""}, title = "Chefs profesionales", subtitle = "Con amplia trayectoria académica y profesional, detallada en sus perfiles públicos.", list = ["2 años de estudios en una escuela de cocina","5 años trabajando como chef"]) %}
+<section class="grid grid-cols-1 md:grid-cols-2 place-items-center p-5 gap-5">
+  {% if direction == "ltr" %}
+  <article class="grid grid-cols-3 gap-5 place-items-center">
+  {% elif direction == "rtl" %}
+  <article class="grid grid-cols-3 gap-5 place-items-center order-1">
+  {% endif %}
+    <div>
+      <img
+        src="{{image1.img}}"
+        alt="{{image1.alt}}"
+        class="rounded-md"
+      />
+    </div>
+    <div>
+      <img
+      src="{{image2.img}}"
+      alt="{{image2.alt}}"
+        class="rounded-md mb-5"
+      />
+      <img
+      src="{{image3.img}}"
+      alt="{{image3.alt}}"
+        class="rounded-md"
+      />
+    </div>
+    <div>
+      <img
+      src="{{image4.img}}"
+      alt="{{image4.alt}}"
+        class="rounded-md"
+      />
+    </div>
+  </article>
+
+  <article class="">
+    <h2 class="text-3xl">{{title}}</h2>
+    <p class="py-3">
+      {{subtitle}}
+    </p>
+    <ul class="font-bold">
+      {% for item in list %}
+        <li>{{item}}</li>
+      {% endfor %}
+    </ul>
+  </article>
+</section>
+{% endmacro %}

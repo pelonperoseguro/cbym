@@ -1,0 +1,10 @@
+{% from "components/modal.njk" import modal %}
+
+<ul class="menu menu-horizontal items-center px-1">
+  {% include "./switch.njk" %}
+  <li><a href="/aboutme">Sobre mi</a></li>
+  <li><a href="/recipes">Recetas</a></li>
+  {{
+    modal()
+  }}
+</ul>

@@ -1,0 +1,25 @@
+{% macro cardhorizontal(title = "Aqui va el titulo", subtitle = "Aqui va el
+sub-titulo", textbtn = "", image =
+"https://d1zzxdyvtq79bu.cloudfront.net/context/frontend/images/menus/tapas/tapas6.jpg") %}
+<section class="card lg:card-side bg-base-100 shadow-xl">
+  <figure>
+    <img
+      src="{{ image }}"
+      width="650"
+      height="743"
+      class="w-[400px] h-[400px]"
+      alt="Album"
+    />
+  </figure>
+  <article class="grid content-center gap-[var(--padding-card,_2rem)] p-[var(--padding-card,_2rem)] lg:w-8/12">
+    <h2 class="card-title">{{ title | safe }}</h2>
+    <p>{{ subtitle | safe }}</p>
+
+    {% if textbtn != "" %}
+    <div class="card-actions justify-end">
+      <a href="" class="btn btn-primary">{{ textbtn }}</a>
+    </div>
+    {% endif %}
+  </article>
+</section>
+{% endmacro %}
