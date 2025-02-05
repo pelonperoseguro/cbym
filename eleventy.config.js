@@ -1,5 +1,5 @@
-import Nunjucks from "nunjucks";
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
+import Nunjucks from "nunjucks";
 
 export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css/style.css");

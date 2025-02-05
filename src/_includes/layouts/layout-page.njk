@@ -1,4 +1,4 @@
-{% from "../components/hero.njk" import hero %}
+{% from "components/hero.njk" import hero %}
 {% from "ui/title.njk" import title as titletext %}
 {% from "components/cardwithimage.njk" import cardwithimage %}
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-      {% include "../components/navbar.njk" %}
+      {% include "components/navbar.njk" %}
       {{ hero(infoHero.subTitle, infoHero.title, infoHero.textBtn, infoHero.url) }}
     </header>
     <main class="px-5 md:px-32 py-16 grid gap-32">
@@ -47,7 +47,7 @@
       {% endif %}
       
     </main>
-    {% include "../components/footer.njk" %}
+    {% include "components/footer.njk" %}
     <script src="/js/index.js"></script>
   </body>
 </html>

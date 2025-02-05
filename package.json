@@ -6,11 +6,11 @@
   "type": "module",
   "scripts": {
     "dev": "pnpm exec eleventy --serve",
-    "clear": "rm -rf dist && pnpm run clear:styles",
+    "clear": "rm -rf docs && pnpm run clear:styles",
     "clear:styles": "rm -rf src/css/style.css",
     "watch:tailwind": "pnpm exec tailwindcss -i ./src/css/styles.css -o ./src/css/style.css --watch",
     "deploy": "pnpm exec eleventy --pathprefix=/",
-    "deploy-subdomain": "npx @11ty/eleventy --pathprefix=/restaurant/"
+    "deploy-subdomain": "pnpm exec eleventy --pathprefix=/cbym/"
   },
   "keywords": [],
   "author": "",
